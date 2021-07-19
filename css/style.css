@@ -3,17 +3,20 @@
 /* акцент #2196F3 */
 /* белый #FFFFFF*/
 /* вторичный цвет фона #2F303A */
+/* цвет фона портфолио #E5E5E5 */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --secondary-button-bg-color: #f5f4fa;
 }
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: roboto, arial, sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 .list {
@@ -22,16 +25,29 @@ body {
 
 /* logo */
 .logo {
-  color: var(--accent-color);
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  color: #212121;
+}
+
+.logo .logo-part {
+  color: #2196f3;
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav .link,
+.auth-nav .link {
   color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -51,4 +67,18 @@ body {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-family: inherit;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-button-bg-color);
+  font-family: inherit;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
 }
