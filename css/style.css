@@ -27,6 +27,9 @@ body {
 
 /* none */
 .list,
+.site-nav,
+.auth-nav,
+.auth-nav-light,
 .feature-list,
 .works-list,
 .team-list,
@@ -59,8 +62,8 @@ body {
 }
 
 /* site-nav */
-.site-nav .link,
-.auth-nav .link {
+.site-nav-link,
+.auth-nav-link {
   color: var(--title-text-color);
 
   font-style: normal;
@@ -71,18 +74,24 @@ body {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.auth-nav .link:hover,
-.auth-nav .link:focus,
-.auth-nav-light .link:hover,
-.auth-nav-light .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.auth-nav-light-link:hover,
+.auth-nav-light-link:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
 
-.site-nav .link.current {
+.site-nav-link-current {
   color: var(--accent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* hero */
@@ -109,7 +118,7 @@ body {
 }
 
 /* feature-list */
-.feature-list .title {
+.feature-list-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -117,13 +126,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.feature-list .text {
+.feature-list-text {
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* button primary */
-.button.primary {
+.button-primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -134,8 +143,8 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.button-primary:hover,
+.button-primary:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
   cursor: pointer;
@@ -146,7 +155,7 @@ body {
   background-color: var(--third-bg-color);
 }
 
-.team-list .title {
+.team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
 }
@@ -166,7 +175,7 @@ body {
 }
 
 /* ссылки в футере */
-.auth-nav-light .link {
+.auth-nav-light-link {
   color: rgba(255, 255, 255, 0.68);
   font-size: 14px;
   line-height: 1.71;
@@ -175,7 +184,7 @@ body {
 }
 
 /* buttons secondary */
-.buttons.secondary {
+.buttons-secondary {
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
   font-family: inherit;
@@ -185,8 +194,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.buttons.secondary:hover,
-.buttons.secondary:focus {
+.buttons-secondary:hover,
+.buttons-secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
