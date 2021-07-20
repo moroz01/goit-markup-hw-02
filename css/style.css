@@ -62,9 +62,19 @@ body {
 }
 
 /* site-nav */
-.site-nav-link,
-.auth-nav-link {
+.site-nav-link {
   color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav-link {
+  color: var(--primary-text-color);
 
   font-style: normal;
   font-weight: 500;
@@ -156,6 +166,11 @@ body {
 .team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
+  font-size: 16px;
+}
+
+.team-list-text {
+  font-size: 16px;
 }
 
 /* footer */
@@ -199,7 +214,7 @@ body {
   font-family: inherit;
 }
 
-.projects-list .link {
+.projects-list-link {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -207,6 +222,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.projects-list .text {
+.projects-list-text {
+  font-size: 16px;
   line-height: 1.87;
 }
