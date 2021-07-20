@@ -81,7 +81,6 @@ body {
 .auth-nav-light-link:hover,
 .auth-nav-light-link:focus {
   color: var(--accent-color);
-  cursor: pointer;
 }
 
 .site-nav-link-current {
@@ -147,7 +146,6 @@ body {
 .button-primary:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
-  cursor: pointer;
 }
 
 /* team section */
@@ -198,7 +196,6 @@ body {
 .buttons-secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
   font-family: inherit;
 }
 
